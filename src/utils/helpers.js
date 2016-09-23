@@ -13,7 +13,7 @@ function searchGit (add) {
 
 
 function getJson() {
-  let address = `https://raw.githubusercontent.com/newming/demodata/master/bigdemo.json?${Math.random()}`;
+  let address = `https://raw.githubusercontent.com/qiduweiliang/demodata/master/bigdemocard/card.json?${Math.random()}`;
   return axios.get(address)
     .then( (res) => (
       { getJson:res.data }
@@ -24,7 +24,7 @@ function getJson() {
 }
 
 function getMd(add) {
-  let address = `https://raw.githubusercontent.com/newming/demodata/master/blog/${add}.md`;
+  let address = `https://raw.githubusercontent.com/qiduweiliang/demodata/master/blog/${add}.md`;
   return axios.get(address)
     .then( (res) => (
       { getMd:res.data }
